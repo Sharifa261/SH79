@@ -8,58 +8,51 @@
     android:orientation="vertical"
     android:background="#282A36"
     android:padding="16dp"
-    tools:context=".LoginActivity">
+    tools:context=".LoginAccountActivity">
 
-    <ImageView
-        android:id="@+id/imageView"
+    <TextView
+        android:id="@+id/textView3"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_marginTop="180dp"
-        app:tint="#E91E63"
-        app:srcCompat="@drawable/ic_android_black_24dp" />
+        android:layout_height="wrap_content"
+        android:text="Ligin To Your Account" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:textColor="#79869F"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Explore the best experience now"/>
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
-        android:textColor="@color/white"
         android:layout_height="wrap_content"
-        android:text="@string/email" />
+        android:text="Email" />
 
     <EditText
         android:id="@+id/editTextText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColorHint="@color/white"
         android:ems="10"
         android:hint="abc@gmail.com"
         android:inputType="textEmailAddress"
-        android:minHeight="48dp" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="@color/white"
-        android:layout_marginTop="14dp"
-        android:text="@string/password" />
+        android:textColorHint="@color/white"
+        android:minHeight="48dp"
+        android:textColor="@color/white" />
 
     <EditText
-        android:id="@+id/editTextText2"
+        android:id="@+id/editTextTextPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColorHint="@color/white"
         android:ems="10"
-        android:hint="123456"
-
         android:inputType="textPassword"
         android:minHeight="48dp" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="18dp"
-        android:backgroundTint="#E91E63"
-        android:text="@string/login" />
 
 </LinearLayout>
