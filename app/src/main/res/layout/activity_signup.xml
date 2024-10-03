@@ -1,60 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="#282A36"
-    android:padding="16dp"
     tools:context=".signup">
 
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/itmImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/sample_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/backArrowImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/favourite"
+        tools:layout_editor_absoluteX="386dp"
+        tools:layout_editor_absoluteY="337dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/textView3"
-        android:textColor="@color/white"
+        android:id="@+id/textView5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Casual clothes for woman 100% new"
+        android:textColor="@color/black"
+        android:textSize="22sp"
         android:textStyle="bold"
-        android:textSize="20sp"
-        android:layout_marginTop="80dp"
-        android:gravity="center"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Froget Your Password" />
+        app:layout_constraintStart_toStartOf="@id/backArrowImage"
+        app:layout_constraintTop_toBottomOf="@id/itmImage" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/pricTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="372dp"
+        android:layout_marginTop="12dp"
+        android:text="$590"
+        android:textColor="#5ABBDD"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="@id/backArrowImage"
+        app:layout_constraintTop_toBottomOf="@id/itmImage" />
+
+    <TextView
+        android:id="@+id/textViewj"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="100dp"
+        android:text="Description"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/backArrowImage"
+        app:layout_constraintTop_toBottomOf="@id/itmImage" />
+
+    <TextView
+        android:id="@+id/textVieıا"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="156dp"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur neque, amet pretium eget quis vitae. Congue id dis tincidunt eu velit mattis quis lorem. Facilisis urna, non a ornare egestas. Ut eu ullamcorper molestie donec ut dolor diam commodo nulla. Eget lectus amet auctor habitasse cursus praesent risus consequat."
         android:textColor="#79869F"
-        android:gravity="center"
-        android:layout_marginTop="5dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="enter your email address and we will send you a link to reset your password" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Email" />
-
-    <EditText
-        android:id="@+id/editTextText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="abc@gmail.com"
-        android:inputType="textEmailAddress"
-        android:minHeight="48dp"
-        android:textColorHint="@color/white"
-        android:textColor="@color/white" />
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/backArrowImage"
+        app:layout_constraintTop_toBottomOf="@id/itmImage" />
 
 
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="18dp"
-        android:backgroundTint="#E91E63"
-        android:text="submit" />
+</androidx.constraintlayout.widget.ConstraintLayout>
 
-</LinearLayout>
