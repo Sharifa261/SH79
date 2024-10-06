@@ -5,7 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".signup">
+    tools:context=".signup"
+    tools:ignore="ExtraText">
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/itmImage"
@@ -34,9 +35,10 @@
         android:layout_height="50dp"
         android:backgroundTint="@color/white"
         android:src="@drawable/favourite"
-        tools:layout_editor_absoluteX="386dp"
-        tools:layout_editor_absoluteY="337dp"
-        tools:ignore="MissingConstraints" />
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="@id/itmImage"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
     <TextView
         android:id="@+id/textView5"
@@ -87,6 +89,26 @@
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@id/backArrowImage"
         app:layout_constraintTop_toBottomOf="@id/itmImage" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="134dp"
+        android:layout_height="74dp"
+        android:backgroundTint="#FFFFFF"
+        app:srcCompat="@drawable/baseline_add_shopping_cart_24"
+        tools:layout_editor_absoluteX="13dp"
+        tools:layout_editor_absoluteY="899dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="268dp"
+        android:layout_height="82dp"
+        android:backgroundTint="#5ABBDD"
+        android:text="$590 BUY NOW"
+        tools:layout_editor_absoluteX="165dp"
+        tools:layout_editor_absoluteY="899dp"
+        tools:ignore="MissingConstraints" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
