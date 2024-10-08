@@ -31,14 +31,16 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatImageButton
+        android:layout_marginLeft="280dp"
+        android:contentDescription="NULL"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:backgroundTint="@color/white"
-        android:src="@drawable/favourite"
         android:layout_marginEnd="12dp"
         android:layout_marginBottom="12dp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/favourite"
         app:layout_constraintBottom_toBottomOf="@id/itmImage"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/textView5"
@@ -90,13 +92,16 @@
         app:layout_constraintStart_toStartOf="@id/backArrowImage"
         app:layout_constraintTop_toBottomOf="@id/itmImage" />
 
+
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/delButton"
+        android:layout_marginLeft="280dp"
+        android:contentDescription="NULL"
         android:layout_width="134dp"
         android:layout_height="74dp"
         android:backgroundTint="#FFFFFF"
-        app:srcCompat="@drawable/baseline_add_shopping_cart_24"
-        tools:layout_editor_absoluteX="13dp"
+        android:src="@drawable/baseline_add_shopping_cart_24"
+        tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="899dp"
         tools:ignore="MissingConstraints" />
 
@@ -106,9 +111,9 @@
         android:layout_height="82dp"
         android:backgroundTint="#5ABBDD"
         android:text="$590 BUY NOW"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="165dp"
-        tools:layout_editor_absoluteY="899dp"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteY="899dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
